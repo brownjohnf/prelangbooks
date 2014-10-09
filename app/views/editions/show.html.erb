@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @edition.author %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @edition.name %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @edition.publisher %>
+</p>
+
+<p>
+  <strong>Universe:</strong>
+  <%= @edition.universe %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @edition.title %>
+</p>
+
+<p>
+  <strong>Binding:</strong>
+  <%= @edition.binding %>
+</p>
+
+<p>
+  <strong>Pages:</strong>
+  <%= @edition.pages %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @edition.language %>
+</p>
+
+<%= link_to 'Edit', edit_edition_path(@edition) %> |
+<%= link_to 'Back', editions_path %>

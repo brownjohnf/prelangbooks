@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :editions
+
   resources :universes
 
   resources :entities

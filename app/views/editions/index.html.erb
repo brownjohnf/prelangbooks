@@ -1,0 +1,39 @@
+<h1>Listing editions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Author</th>
+      <th>Name</th>
+      <th>Publisher</th>
+      <th>Universe</th>
+      <th>Title</th>
+      <th>Binding</th>
+      <th>Pages</th>
+      <th>Language</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @editions.each do |edition| %>
+      <tr>
+        <td><%= edition.author %></td>
+        <td><%= edition.name %></td>
+        <td><%= edition.publisher %></td>
+        <td><%= edition.universe %></td>
+        <td><%= edition.title %></td>
+        <td><%= edition.binding %></td>
+        <td><%= edition.pages %></td>
+        <td><%= edition.language %></td>
+        <td><%= link_to 'Show', edition %></td>
+        <td><%= link_to 'Edit', edit_edition_path(edition) %></td>
+        <td><%= link_to 'Destroy', edition, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Edition', new_edition_path %>
