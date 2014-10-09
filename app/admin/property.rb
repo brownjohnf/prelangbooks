@@ -1,4 +1,5 @@
 ActiveAdmin.register Property do
+  permit_params :type, :type_id, :key_name, :value
 
 
   # See permitted parameters documentation:
