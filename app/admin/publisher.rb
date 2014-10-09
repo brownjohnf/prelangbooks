@@ -1,4 +1,5 @@
 ActiveAdmin.register Publisher do
+  permit_params :name, :location
 
 
   # See permitted parameters documentation:
