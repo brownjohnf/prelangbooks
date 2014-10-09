@@ -1,4 +1,5 @@
 ActiveAdmin.register Universe do
+  permit_params :name, :string
 
 
   # See permitted parameters documentation:
