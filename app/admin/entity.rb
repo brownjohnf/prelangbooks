@@ -1,4 +1,5 @@
 ActiveAdmin.register Entity do
+  permit_params :type, :type_id, :name
 
 
   # See permitted parameters documentation:
