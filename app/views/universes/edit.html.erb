@@ -1,6 +1,5 @@
-<h1>Editing universe</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @universe %> |
-<%= link_to 'Back', universes_path %>
+<%- model_class = Universe -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Universe %></h1>
+</div>
+<%= render :partial => 'form' %>
