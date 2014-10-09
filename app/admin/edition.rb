@@ -1,4 +1,5 @@
 ActiveAdmin.register Edition do
+  permit_params :name, :title, :binding, :pages, :language
 
 
   # See permitted parameters documentation:
