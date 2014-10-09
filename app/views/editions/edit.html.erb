@@ -1,6 +1,5 @@
-<h1>Editing edition</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @edition %> |
-<%= link_to 'Back', editions_path %>
+<%- model_class = Edition -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Edition %></h1>
+</div>
+<%= render :partial => 'form' %>
